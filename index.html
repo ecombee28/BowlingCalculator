@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Bowling Calculator</title>
+  </head>
+  <body onload="createFrame()">
+    <section class="container">
+      <h1 class="title">Bowling Calculator</h1>
+      <div class="warning"><p id="warning"></p></div>
+
+      <main class="frame__container">
+        <div id="frame__wrapper" class="frame__wrapper"></div>
+      </main>
+      <button class="reset" onclick="newGame()">New Game</button>
+    </section>
+
+    <script src="Player.js"></script>
+    <script src="Frame.js"></script>
+    <script src="ScoreCard.js"></script>
+    <script src="Warnings.js"></script>
+
+    <script src="Main.js"></script>
+  </body>
+</html>

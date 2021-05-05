@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./bowling-Image.jpg");
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+    width: auto;
+    font-size: 2.7rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(253, 252, 252);
+}
+
+.frame__container {
+    width: 1400px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    margin-top: 25vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.label {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.warning {
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+    text-align: center;
+}
+
+.warning p {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    color: red;
+    font-weight: 700;
+}
+
+.frame {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    border-right: 2px solid black;
+    background-color: rgb(212, 212, 212);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.frame .input {
+    width: 95%;
+    height: 95%;
+    padding: 3px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.frame .last__frame {
+    width: 45%;
+    height: 100%;
+}
+
+.frame .extra__input {
+    width: 49%;
+    height: 100%;
+    float: right;
+    border-left: 2px solid black;
+}
+
+.active {
+    border: 3px solid blue;
+}
+
+.shot__1 {
+    width: 50%;
+    height: 25%;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.shot__2 {
+    width: 47%;
+    height: 25%;
+    display: inline-block;
+    text-align: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.frame__score {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame__score p {
+    font-size: 60px;
+}
+
+.reset {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background-color: rgb(56, 89, 189);
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.reset:hover {
+    background-color: rgb(83, 118, 221);
+}
